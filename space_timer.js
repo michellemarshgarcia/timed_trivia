@@ -1,8 +1,39 @@
-//  Simple Timer Solution
-//  Step 1:
-//  Use the following link inside the Audio function below:
-//  https://p.scdn.co/mp3-preview/ed5a443bc86176135ebca8a114f66f4d814d4c90
+
 var audio = new Audio("buzzer.js");
+var hotPlanet = Mercury;
+var smallPlanet = Pluto;
+var largePlanet = Jupiter;
+var bestPlanet = Earth;
+
+ var planets = ["Mercury", "Pluto", "Jupiter", "Earth"];
+
+   
+      function renderButtons() {
+
+    
+        $("#space-trivia").empty();
+
+    
+        for (var i = 0; i < planets.length; i++) {
+
+         
+          // This code $("<button>") is all jQuery needs to create the start and end tag. (<button></button>)
+          var a = $("<button>");
+          // Adding a class
+          a.addClass("planet");
+          // Adding a data-attribute with a value of the planet at index i
+          a.attr("data-name", planets[i]);
+          // Providing the button's text with a value of the planet at index i
+          a.text(planets[i]);
+          // Adding the button to the HTML
+          $("#space").append(a);
+        }
+      }
+
+      // This function handles events where one button is clicked
+      $("#add-movie").on("click", function(event)) {
+      
+    }
 
 setTimeout(tenSeconds, 1000 * 10);
 setTimeout(twentySeconds, 1000 * 20);
