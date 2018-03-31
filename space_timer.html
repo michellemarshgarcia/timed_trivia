@@ -1,33 +1,36 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
+
   <head>
+
     <meta charset="UTF-8">
     <title>Timed Trivia</title>
+
+        <!-- CSS Reset Sheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <!-- Our own CSS Sheet -->
+        <link rel="stylesheet" href="assets/style.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css">
+
   </head>
+
   <body>
 
-  <style type="text/css"> 
-    body{
-      background-color:purple;
-      color:white;
-    }
-    
-    }
-  </style>
+    <div id="wrapper">
+      <h1>Spectacular Space Trivia</h1>
+      <div id="sub-wrapper">
+        <div id="quiz-area">
+          <button id="start">Start</button>
+        </div>
+      </div>
+    </div>
 
-    <div id="time-left"></div>
-    <h1>Spectacular Space Trivia</h1>
-    <h2>What is the smallest planet?</h2>
-    <h2 id="smallPlanet"></h2>
-    <h2>What is the largest planet?</h2>
-    <h2 id="largePlanet"></h2>
-    <h2>What is the cloest planet to the sun?</h2>
-    <h2 id="hotPlanet"></h2>
-    <h2>What is the best planet?</h2>
-    <h2 id="bestPlanet"></h2>
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Script -->
-    <script src="space_timer.js"></script>
-  </body>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    </body>
+
 </html>
