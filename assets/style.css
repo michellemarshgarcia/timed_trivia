@@ -4,7 +4,7 @@ body {
 }
 body {
   text-align: center;
-  background-image: url(".../solar_pic.jpg");
+  background-image: url(".../assets/solar_pic.jpg");
 }
 #wrapper {
   width: 960px;

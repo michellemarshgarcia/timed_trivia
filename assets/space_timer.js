@@ -50,7 +50,7 @@ $("#counter-number").html(game.counter);
 if (game.counter === 0) {
   console.log("TIME UP");
   game.done();
-}
+};
 
 start: function() {
 timer = setInterval(game.countdown, 1000);
